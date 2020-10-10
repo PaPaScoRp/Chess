@@ -9,10 +9,10 @@ int main() {
 
 	Location a(A, 5);
 
-	Square b(Light, a);
+	Square f(Light, a);
 
 	Board board;
 	board.printBoard();
-	std::cout << b.toString();
+	std::cout << f.toString();
 
 }

@@ -2,16 +2,17 @@
 #include "File.h"
 #include "Location.h"
 #include "Square.h"
-Location b(A, 3);
+#include <vector>
 class Board
 {
 private:
-	eFile bFile;
 	Location b;
 	Square c;
+	eFile bFile;
 public:
 	Board();
-	Square boardSquares[8][8];
+	std::vector<std::vector<Square>> boardSquares[8][8];
+	std::vector<Square> rowSquares[8];
 	void printBoard() {
 		for (auto row : boardSquares) {
 			std::cout << row << "\n";
